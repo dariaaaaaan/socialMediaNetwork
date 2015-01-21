@@ -1,0 +1,23 @@
+div.wentworthPerk{
+	content:url(http://media-cdn.tripadvisor.com/media/photo-s/03/75/80/37/wentworth-perk.jpg);
+	height: 30%;
+	width: 100%;
+	padding-bottom: 8px;
+}
+
+div.theUglyMug{
+	content:url(http://www.whatsgoinon.ca/wp-content/uploads/2013/07/the-ugly-mug.jpeg);
+	height:30%;
+	width:100%;
+	padding-bottom: 8px;
+}
+
+div.doktorLukes{
+	content:url(http://media-cdn.tripadvisor.com/media/photo-s/04/a6/ea/fb/doktor-luke-s-a-respectable.jpg);
+	height:30%;
+	width:100%;
+}
+
+body{
+	background-color: black;
+}

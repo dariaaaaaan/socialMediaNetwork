@@ -1,0 +1,65 @@
+<html>
+<head>
+
+<link rel=stylesheet href="login.css" type="text/css">
+
+</head>
+
+<body>
+	<div style="margin:30%" align = center> 
+				<form action="" method="POST">
+                <input type="text" name="email" id="email" class="form-control" placeholder="Email" value="" required autofocus>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="" required autofocus>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" value="" required autofocus>
+                <input type="text" name="restaurant" id="restaurant" class="form-control" placeholder="Restaurant" value="" required autofocus>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone" value="" required autofocus>
+
+                           
+                </form>
+	<input type="submit" name="mysubmit" onClick=submitform() value="Submit"/>
+</div>
+
+
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+
+
+
+<script>   
+		
+		var socket = io()
+
+		var submitform=function(){
+			var emailValue = document.getElementById("email").value;
+			console.log (emailValue);
+
+			var passwordValue = document.getElementById("password").value;
+			console.log (passwordValue);
+
+			var nameValue = document.getElementById("name").value;
+			console.log (nameValue);
+
+			var restaurantValue = document.getElementById("restaurant").value;
+			console.log (restaurantValue);
+
+			var phoneValue = document.getElementById("phone").value;
+			console.log (phoneValue);
+
+			socket.emit('submitform', emailValue, passwordValue, nameValue, restaurantValue, phoneValue);
+
+
+		};
+
+
+
+
+</script>
+
+</body>
+
+
+
+</html>

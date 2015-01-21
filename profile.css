@@ -1,0 +1,29 @@
+
+
+input[name="address"]{
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    height:30px;
+
+}
+
+input[name="city"]{
+    display:block;
+    margin-top: 10px;
+    width: 200px;
+    height:30px;
+}
+
+input[name="province"]{
+    display:block;
+    margin-top: 10px;
+    width: 200px;
+    height:30px;
+ 
+}
+
+input[name="mysubmit"] {
+display:block;
+margin-top: 10px;
+}

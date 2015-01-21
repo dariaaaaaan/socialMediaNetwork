@@ -1,0 +1,53 @@
+<html>
+<head>
+
+<link rel=stylesheet href="profile.css" type="text/css">
+<script src="/socket.io/socket.io.js"></script>
+
+</head>
+
+<body>
+	<div style="margin:30%" align = center> 
+				<form action="" method="POST">
+                <input type="text" name="address" id="address" class="form-control" placeholder="Address" value="" required autofocus>
+                <input type="text" name="city" id="city" class="form-control" placeholder="City" value="" required autofocus>
+                <input type="text" name="province" id="province" class="form-control" placeholder="Province" value="" required autofocus>
+            </form>
+               
+               
+              
+	<input type="submit" name="mysubmit" onClick=submitform() value="Submit"/> 
+</div>
+
+
+<script>   
+		
+		var socket = io()
+
+		var submitform=function(){
+			var addressValue = document.getElementById("address").value;
+			console.log (addressValue);
+
+			var cityValue = document.getElementById("city").value;
+			console.log (cityValue);
+
+			var provinceValue = document.getElementById("province").value;
+			console.log (provinceValue);
+
+
+			socket.emit('submitform', addressValue, cityValue, provinceValue);
+
+
+		};
+
+
+
+
+</script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,42 @@
+
+input[name="email"]{
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    height:30px;
+}
+
+input[name="password"]{
+    display:block;
+    margin-top: 10px;
+    width: 200px;
+    height:30px;
+}
+
+input[name="name"]{
+    display:block;
+    margin-top: 10px;
+    width: 200px;
+    height:30px;
+ 
+}
+
+input[name="restaurant"]{
+    display:block;
+    margin-top: 10px;
+    width: 200px;
+    height:30px;
+}
+
+
+input[name="phone"] {
+    display:block;
+    margin-top: 10px;
+    width: 200px;
+    height:30px;
+}
+
+input[name="mysubmit"] {
+    display:block;
+    margin-top: 10px;
+}
